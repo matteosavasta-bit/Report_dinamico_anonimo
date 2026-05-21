@@ -1,0 +1,3 @@
+- This is the anonymized version of a delivery for a primary Italian steel-sector player, prepared as a Perspective AI portfolio sample for external sharing (e.g., funds).
+- Do not re-introduce identifying details from the original engagement: company name, parent group, IT contacts, the ERP software-house partner, the specific city, customer/supplier codes, or exact database volume figures.
+- Placeholder for the client: "Primario Player Siderurgico" (long form, narrative) or "Primario Player" (UI brand short form).

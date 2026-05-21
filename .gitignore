@@ -1,0 +1,17 @@
+node_modules/
+build/
+dist/
+coverage/
+.DS_Store
+*.log
+.env*
+!.env.example
+
+# Playwright MCP browser-automation artifacts
+.playwright-mcp/
+
+# Test screenshots from dev checks
+after-click.png
+landing-initial.png
+landing-mobile.png
+

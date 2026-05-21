@@ -1,0 +1,156 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 850" width="600" height="850" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <marker id="arrowRight" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#999"/>
+    </marker>
+    <marker id="arrowLeft" markerWidth="8" markerHeight="6" refX="0" refY="3" orient="auto">
+      <path d="M8,0 L0,3 L8,6 Z" fill="#999"/>
+    </marker>
+    <marker id="arrowUp" markerWidth="6" markerHeight="8" refX="3" refY="0" orient="auto">
+      <path d="M0,8 L3,0 L6,8 Z" fill="#B8922E"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="850" fill="#FFFFFF"/>
+
+  <!-- ==================== TITLE ==================== -->
+  <text x="300" y="38" text-anchor="middle" fill="#1A1A1A" font-size="19" font-weight="700">Piattaforma Modulare AI/BI — il cliente</text>
+  <line x1="60" y1="52" x2="540" y2="52" stroke="#E0E0E0" stroke-width="1"/>
+
+  <!-- ==================== UI LAYER ==================== -->
+  <rect x="30" y="68" width="540" height="46" rx="10" fill="#F0F0F0" stroke="#D5D5D5" stroke-width="1"/>
+  <text x="300" y="86" text-anchor="middle" fill="#1A1A1A" font-size="10.5" font-weight="600" letter-spacing="0.8">INTERFACCIA UTENTE</text>
+  <text x="300" y="103" text-anchor="middle" fill="#666666" font-size="10">Web App Responsive  ·  Notifiche  ·  Report Automatici</text>
+
+  <!-- Connector -->
+  <line x1="300" y1="114" x2="300" y2="132" stroke="#D0D0D0" stroke-width="1" stroke-dasharray="4,3"/>
+
+  <!-- ==================== MODULE CARDS (2×3 grid) ==================== -->
+
+  <!-- Row 1 -->
+  <!-- Business Intelligence & Analytics (READ-ONLY → yellow) -->
+  <rect x="30" y="134" width="262" height="86" rx="10" fill="#F7D96E" stroke="#DEC25A" stroke-width="1"/>
+  <text x="161" y="159" text-anchor="middle" fill="#1A1A1A" font-size="12.5" font-weight="700">Business Intelligence &amp; Analytics</text>
+  <text x="161" y="177" text-anchor="middle" fill="#4A4A4A" font-size="9.5">Dashboard interattive, KPI in tempo reale,</text>
+  <text x="161" y="190" text-anchor="middle" fill="#4A4A4A" font-size="9.5">analisi predittive e reportistica avanzata</text>
+  <rect x="38" y="200" width="54" height="14" rx="7" fill="none" stroke="#B8922E" stroke-width="0.8"/>
+  <text x="65" y="210" text-anchor="middle" fill="#876A1A" font-size="7.5" font-weight="600">READ-ONLY</text>
+
+  <!-- Financial Intelligence (READ-WRITE → blue) -->
+  <rect x="308" y="134" width="262" height="86" rx="10" fill="#A3C4E0" stroke="#82A8C6" stroke-width="1"/>
+  <text x="439" y="159" text-anchor="middle" fill="#1A1A1A" font-size="12.5" font-weight="700">Financial Intelligence</text>
+  <text x="439" y="177" text-anchor="middle" fill="#4A4A4A" font-size="9.5">Previsioni cash flow, riconciliazione</text>
+  <text x="439" y="190" text-anchor="middle" fill="#4A4A4A" font-size="9.5">automatica e alerting su anomalie</text>
+  <rect x="316" y="200" width="60" height="14" rx="7" fill="none" stroke="#5585A8" stroke-width="0.8"/>
+  <text x="346" y="210" text-anchor="middle" fill="#3A6585" font-size="7.5" font-weight="600">READ-WRITE</text>
+
+  <!-- Row 2 -->
+  <!-- Document Automation (READ-WRITE → blue) -->
+  <rect x="30" y="234" width="262" height="86" rx="10" fill="#A3C4E0" stroke="#82A8C6" stroke-width="1"/>
+  <text x="161" y="259" text-anchor="middle" fill="#1A1A1A" font-size="12.5" font-weight="700">Document Automation</text>
+  <text x="161" y="277" text-anchor="middle" fill="#4A4A4A" font-size="9.5">Generazione automatica DDT, fatture,</text>
+  <text x="161" y="290" text-anchor="middle" fill="#4A4A4A" font-size="9.5">conferme d'ordine e packing list</text>
+  <rect x="38" y="300" width="60" height="14" rx="7" fill="none" stroke="#5585A8" stroke-width="0.8"/>
+  <text x="68" y="310" text-anchor="middle" fill="#3A6585" font-size="7.5" font-weight="600">READ-WRITE</text>
+
+  <!-- Supplier Intelligence (READ-WRITE → blue) -->
+  <rect x="308" y="234" width="262" height="86" rx="10" fill="#A3C4E0" stroke="#82A8C6" stroke-width="1"/>
+  <text x="439" y="259" text-anchor="middle" fill="#1A1A1A" font-size="12.5" font-weight="700">Supplier Intelligence</text>
+  <text x="439" y="277" text-anchor="middle" fill="#4A4A4A" font-size="9.5">Monitoraggio fornitori, scoring</text>
+  <text x="439" y="290" text-anchor="middle" fill="#4A4A4A" font-size="9.5">automatico e alert via email</text>
+  <rect x="316" y="300" width="60" height="14" rx="7" fill="none" stroke="#5585A8" stroke-width="0.8"/>
+  <text x="346" y="310" text-anchor="middle" fill="#3A6585" font-size="7.5" font-weight="600">READ-WRITE</text>
+
+  <!-- Row 3 -->
+  <!-- Material Optimization (READ-WRITE → blue) -->
+  <rect x="30" y="334" width="262" height="86" rx="10" fill="#A3C4E0" stroke="#82A8C6" stroke-width="1"/>
+  <text x="161" y="359" text-anchor="middle" fill="#1A1A1A" font-size="12.5" font-weight="700">Material Optimization</text>
+  <text x="161" y="377" text-anchor="middle" fill="#4A4A4A" font-size="9.5">Ottimizzazione taglio barre 1D,</text>
+  <text x="161" y="390" text-anchor="middle" fill="#4A4A4A" font-size="9.5">riduzione sfridi e gestione magazzino</text>
+  <rect x="38" y="400" width="60" height="14" rx="7" fill="none" stroke="#5585A8" stroke-width="0.8"/>
+  <text x="68" y="410" text-anchor="middle" fill="#3A6585" font-size="7.5" font-weight="600">READ-WRITE</text>
+
+  <!-- il cliente AI Assistant (READ-ONLY → yellow) -->
+  <rect x="308" y="334" width="262" height="86" rx="10" fill="#F7D96E" stroke="#DEC25A" stroke-width="1"/>
+  <text x="439" y="359" text-anchor="middle" fill="#1A1A1A" font-size="12.5" font-weight="700">il cliente AI Assistant</text>
+  <text x="439" y="377" text-anchor="middle" fill="#4A4A4A" font-size="9.5">Chatbot aziendale per interrogazione</text>
+  <text x="439" y="390" text-anchor="middle" fill="#4A4A4A" font-size="9.5">dati, analisi e supporto decisionale</text>
+  <rect x="316" y="400" width="54" height="14" rx="7" fill="none" stroke="#B8922E" stroke-width="0.8"/>
+  <text x="343" y="410" text-anchor="middle" fill="#876A1A" font-size="7.5" font-weight="600">READ-ONLY</text>
+
+  <!-- Legend -->
+  <g transform="translate(30, 436)">
+    <rect x="0" y="0" width="12" height="12" rx="3" fill="#F7D96E" stroke="#DEC25A" stroke-width="0.8"/>
+    <text x="18" y="10" fill="#666" font-size="9">Read-Only</text>
+    <rect x="85" y="0" width="12" height="12" rx="3" fill="#A3C4E0" stroke="#82A8C6" stroke-width="0.8"/>
+    <text x="103" y="10" fill="#666" font-size="9">Read-Write (Sage X3)</text>
+  </g>
+
+  <!-- Connector -->
+  <line x1="300" y1="456" x2="300" y2="476" stroke="#D0D0D0" stroke-width="1" stroke-dasharray="4,3"/>
+
+  <!-- ==================== FOUNDATION LAYER ==================== -->
+  <rect x="30" y="478" width="540" height="100" rx="10" fill="#F0F0F0" stroke="#D5D5D5" stroke-width="1"/>
+  <text x="300" y="500" text-anchor="middle" fill="#1A1A1A" font-size="10.5" font-weight="600" letter-spacing="0.8">FOUNDATION LAYER</text>
+
+  <!-- Foundation components (3×2 grid) -->
+  <!-- Row 1 -->
+  <rect x="44" y="512" width="160" height="26" rx="8" fill="#FFFFFF" stroke="#D5D5D5" stroke-width="0.8"/>
+  <text x="124" y="529" text-anchor="middle" fill="#333" font-size="10" font-weight="500">Data Engine</text>
+
+  <rect x="216" y="512" width="160" height="26" rx="8" fill="#FFFFFF" stroke="#D5D5D5" stroke-width="0.8"/>
+  <text x="296" y="529" text-anchor="middle" fill="#333" font-size="10" font-weight="500">AI Engine</text>
+
+  <rect x="388" y="512" width="168" height="26" rx="8" fill="#FFFFFF" stroke="#D5D5D5" stroke-width="0.8"/>
+  <text x="472" y="529" text-anchor="middle" fill="#333" font-size="10" font-weight="500">Security &amp; Auth</text>
+
+  <!-- Row 2 -->
+  <rect x="44" y="546" width="160" height="26" rx="8" fill="#FFFFFF" stroke="#D5D5D5" stroke-width="0.8"/>
+  <text x="124" y="563" text-anchor="middle" fill="#333" font-size="10" font-weight="500">Integration Bus</text>
+
+  <rect x="216" y="546" width="160" height="26" rx="8" fill="#FFFFFF" stroke="#D5D5D5" stroke-width="0.8"/>
+  <text x="296" y="563" text-anchor="middle" fill="#333" font-size="10" font-weight="500">Email Engine</text>
+
+  <rect x="388" y="546" width="168" height="26" rx="8" fill="#FFFFFF" stroke="#D5D5D5" stroke-width="0.8"/>
+  <text x="472" y="563" text-anchor="middle" fill="#333" font-size="10" font-weight="500">Sage X3 Write-Back</text>
+
+  <!-- Connector -->
+  <line x1="300" y1="578" x2="300" y2="600" stroke="#D0D0D0" stroke-width="1" stroke-dasharray="4,3"/>
+
+  <!-- ==================== DATA LAYER ==================== -->
+  <rect x="30" y="602" width="540" height="170" rx="10" fill="#F7F7F7" stroke="#D5D5D5" stroke-width="1"/>
+  <text x="300" y="626" text-anchor="middle" fill="#1A1A1A" font-size="10.5" font-weight="600" letter-spacing="0.8">DATA LAYER</text>
+
+  <!-- Sage X3 SQL Server -->
+  <rect x="50" y="642" width="210" height="56" rx="10" fill="#F7D96E" stroke="#DEC25A" stroke-width="1"/>
+  <!-- DB icon -->
+  <ellipse cx="84" cy="666" rx="12" ry="7" fill="none" stroke="#B8922E" stroke-width="1.2"/>
+  <path d="M72,666 L72,678 Q84,685 96,678 L96,666" fill="none" stroke="#B8922E" stroke-width="1.2"/>
+  <text x="162" y="666" text-anchor="middle" fill="#1A1A1A" font-size="12" font-weight="700">Sage X3</text>
+  <text x="162" y="682" text-anchor="middle" fill="#666" font-size="9.5">SQL Server · Produzione</text>
+
+  <!-- DB Analitico -->
+  <rect x="340" y="642" width="210" height="56" rx="10" fill="#A3C4E0" stroke="#82A8C6" stroke-width="1"/>
+  <!-- DB icon -->
+  <ellipse cx="374" cy="666" rx="12" ry="7" fill="none" stroke="#5585A8" stroke-width="1.2"/>
+  <path d="M362,666 L362,678 Q374,685 386,678 L386,666" fill="none" stroke="#5585A8" stroke-width="1.2"/>
+  <text x="452" y="666" text-anchor="middle" fill="#1A1A1A" font-size="12" font-weight="700">DB Analitico</text>
+  <text x="452" y="682" text-anchor="middle" fill="#666" font-size="9.5">Replica · Analytics</text>
+
+  <!-- ETL Sync arrows -->
+  <line x1="266" y1="662" x2="334" y2="662" stroke="#999" stroke-width="1.5" marker-end="url(#arrowRight)"/>
+  <line x1="334" y1="678" x2="266" y2="678" stroke="#999" stroke-width="1.5" marker-end="url(#arrowLeft)"/>
+  <text x="300" y="654" text-anchor="middle" fill="#888" font-size="8.5" font-weight="600">ETL Sync</text>
+
+  <!-- Write-back API arrow -->
+  <line x1="155" y1="706" x2="155" y2="740" stroke="#B8922E" stroke-width="1.5" marker-start="url(#arrowUp)"/>
+  <text x="155" y="754" text-anchor="middle" fill="#876A1A" font-size="8.5" font-weight="600">Write-Back API</text>
+
+  <!-- Read arrow -->
+  <line x1="445" y1="706" x2="445" y2="740" stroke="#5585A8" stroke-width="1.5" marker-start="url(#arrowUp)"/>
+  <text x="445" y="754" text-anchor="middle" fill="#3A6585" font-size="8.5" font-weight="600">Read (Analytics)</text>
+
+  <!-- Footer -->
+  <text x="300" y="828" text-anchor="middle" fill="#AAAAAA" font-size="8.5">© 2026 Perspective AI — Architettura Piattaformal cliente</text>
+</svg>

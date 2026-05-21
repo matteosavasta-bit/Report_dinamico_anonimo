@@ -1,0 +1,167 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 850" width="600" height="850" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <marker id="arrowRight" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#999"/>
+    </marker>
+    <marker id="arrowLeft" markerWidth="8" markerHeight="6" refX="0" refY="3" orient="auto">
+      <path d="M8,0 L0,3 L8,6 Z" fill="#999"/>
+    </marker>
+    <marker id="arrowDown" markerWidth="6" markerHeight="8" refX="3" refY="8" orient="auto">
+      <path d="M0,0 L3,8 L6,0 Z" fill="#999"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="850" fill="#FFFFFF"/>
+
+  <!-- ==================== TITLE ==================== -->
+  <text x="300" y="38" text-anchor="middle" fill="#1A1A1A" font-size="18" font-weight="700">Soluzione da analizzare: Knowledge base disegni il cliente</text>
+  <line x1="60" y1="52" x2="540" y2="52" stroke="#E0E0E0" stroke-width="1"/>
+
+  <!-- ==================== SOURCES LAYER ==================== -->
+  <rect x="30" y="66" width="540" height="78" rx="10" fill="#F0F0F0" stroke="#D5D5D5" stroke-width="1"/>
+  <text x="300" y="84" text-anchor="middle" fill="#1A1A1A" font-size="10.5" font-weight="600" letter-spacing="0.8">SOURCES</text>
+
+  <!-- Email card -->
+  <rect x="44" y="94" width="166" height="42" rx="8" fill="#F7D96E" stroke="#DEC25A" stroke-width="1"/>
+  <text x="127" y="111" text-anchor="middle" fill="#1A1A1A" font-size="11" font-weight="700">Email</text>
+  <text x="127" y="125" text-anchor="middle" fill="#4A4A4A" font-size="9">IMAP + allegati DWG/PDF</text>
+
+  <!-- CAD 3D per macchine card -->
+  <rect x="217" y="94" width="166" height="42" rx="8" fill="#F7D96E" stroke="#DEC25A" stroke-width="1"/>
+  <text x="300" y="111" text-anchor="middle" fill="#1A1A1A" font-size="11" font-weight="700">CAD 3D per macchine</text>
+  <text x="300" y="125" text-anchor="middle" fill="#4A4A4A" font-size="9">STEP + part program + BOM</text>
+
+  <!-- sistema di gestione job card -->
+  <rect x="390" y="94" width="166" height="42" rx="8" fill="#F7D96E" stroke="#DEC25A" stroke-width="1"/>
+  <text x="473" y="111" text-anchor="middle" fill="#1A1A1A" font-size="11" font-weight="700">sistema di gestione job</text>
+  <text x="473" y="125" text-anchor="middle" fill="#4A4A4A" font-size="9">codici disegno + distinte</text>
+
+  <!-- Connector down -->
+  <line x1="300" y1="144" x2="300" y2="162" stroke="#D0D0D0" stroke-width="1" stroke-dasharray="4,3"/>
+
+  <!-- ==================== INGESTION LAYER ==================== -->
+  <rect x="30" y="164" width="540" height="74" rx="10" fill="#F0F0F0" stroke="#D5D5D5" stroke-width="1"/>
+  <text x="300" y="182" text-anchor="middle" fill="#1A1A1A" font-size="10.5" font-weight="600" letter-spacing="0.8">INGESTION LAYER</text>
+
+  <!-- 4 small cards -->
+  <rect x="42" y="192" width="124" height="36" rx="8" fill="#A3C4E0" stroke="#82A8C6" stroke-width="1"/>
+  <text x="104" y="207" text-anchor="middle" fill="#1A1A1A" font-size="10" font-weight="700">Email Parser</text>
+  <text x="104" y="220" text-anchor="middle" fill="#4A4A4A" font-size="8.5">allegati + metadata</text>
+
+  <rect x="174" y="192" width="124" height="36" rx="8" fill="#A3C4E0" stroke="#82A8C6" stroke-width="1"/>
+  <text x="236" y="207" text-anchor="middle" fill="#1A1A1A" font-size="10" font-weight="700">CAD Extractor</text>
+  <text x="236" y="220" text-anchor="middle" fill="#4A4A4A" font-size="8.5">DWG/STEP + OCR</text>
+
+  <rect x="306" y="192" width="124" height="36" rx="8" fill="#A3C4E0" stroke="#82A8C6" stroke-width="1"/>
+  <text x="368" y="207" text-anchor="middle" fill="#1A1A1A" font-size="10" font-weight="700">BOM Normalizer</text>
+  <text x="368" y="220" text-anchor="middle" fill="#4A4A4A" font-size="8.5">distinte → schema</text>
+
+  <rect x="438" y="192" width="124" height="36" rx="8" fill="#A3C4E0" stroke="#82A8C6" stroke-width="1"/>
+  <text x="500" y="207" text-anchor="middle" fill="#1A1A1A" font-size="10" font-weight="700">Metadata Enricher</text>
+  <text x="500" y="220" text-anchor="middle" fill="#4A4A4A" font-size="8.5">cliente + embedding</text>
+
+  <!-- Connector down -->
+  <line x1="300" y1="238" x2="300" y2="256" stroke="#D0D0D0" stroke-width="1" stroke-dasharray="4,3"/>
+
+  <!-- ==================== KNOWLEDGE BASE CORE ==================== -->
+  <rect x="30" y="258" width="540" height="142" rx="10" fill="#A3C4E0" stroke="#82A8C6" stroke-width="1.2"/>
+  <text x="300" y="278" text-anchor="middle" fill="#1A1A1A" font-size="12" font-weight="700">Knowledge Base Core</text>
+  <text x="300" y="294" text-anchor="middle" fill="#3A6585" font-size="9" font-weight="600">PostgreSQL  ·  pgvector  ·  Object Storage</text>
+
+  <!-- 5 entity cards -->
+  <rect x="44" y="306" width="100" height="38" rx="8" fill="#FFFFFF" stroke="#82A8C6" stroke-width="0.8"/>
+  <text x="94" y="322" text-anchor="middle" fill="#1A1A1A" font-size="10" font-weight="700">drawings</text>
+  <text x="94" y="335" text-anchor="middle" fill="#666" font-size="8">file · hash · embed</text>
+
+  <rect x="154" y="306" width="100" height="38" rx="8" fill="#FFFFFF" stroke="#82A8C6" stroke-width="0.8"/>
+  <text x="204" y="322" text-anchor="middle" fill="#1A1A1A" font-size="10" font-weight="700">bom_items</text>
+  <text x="204" y="335" text-anchor="middle" fill="#666" font-size="8">distinte · materiali</text>
+
+  <rect x="264" y="306" width="100" height="38" rx="8" fill="#FFFFFF" stroke="#82A8C6" stroke-width="0.8"/>
+  <text x="314" y="322" text-anchor="middle" fill="#1A1A1A" font-size="10" font-weight="700">quotes</text>
+  <text x="314" y="335" text-anchor="middle" fill="#666" font-size="8">preventivi · esito</text>
+
+  <rect x="374" y="306" width="100" height="38" rx="8" fill="#FFFFFF" stroke="#82A8C6" stroke-width="0.8"/>
+  <text x="424" y="322" text-anchor="middle" fill="#1A1A1A" font-size="10" font-weight="700">jobs</text>
+  <text x="424" y="335" text-anchor="middle" fill="#666" font-size="8">part program · tempi</text>
+
+  <rect x="484" y="306" width="72" height="38" rx="8" fill="#FFFFFF" stroke="#82A8C6" stroke-width="0.8"/>
+  <text x="520" y="321" text-anchor="middle" fill="#1A1A1A" font-size="9.5" font-weight="700">quote_</text>
+  <text x="520" y="333" text-anchor="middle" fill="#1A1A1A" font-size="9.5" font-weight="700">order_link</text>
+
+  <!-- Badge -->
+  <rect x="210" y="358" width="180" height="22" rx="11" fill="#FFFFFF" stroke="#5585A8" stroke-width="1"/>
+  <text x="300" y="373" text-anchor="middle" fill="#3A6585" font-size="9" font-weight="600">27K+ disegni · preventivi · ordini</text>
+
+  <!-- Connector down -->
+  <line x1="300" y1="400" x2="300" y2="418" stroke="#D0D0D0" stroke-width="1" stroke-dasharray="4,3"/>
+
+  <!-- ==================== SERVICES LAYER ==================== -->
+  <rect x="30" y="420" width="540" height="74" rx="10" fill="#F0F0F0" stroke="#D5D5D5" stroke-width="1"/>
+  <text x="300" y="438" text-anchor="middle" fill="#1A1A1A" font-size="10.5" font-weight="600" letter-spacing="0.8">SERVICES</text>
+
+  <rect x="44" y="448" width="166" height="40" rx="8" fill="#A3C4E0" stroke="#82A8C6" stroke-width="1"/>
+  <text x="127" y="465" text-anchor="middle" fill="#1A1A1A" font-size="11" font-weight="700">Similarity Search</text>
+  <text x="127" y="479" text-anchor="middle" fill="#4A4A4A" font-size="9">pezzo simile esistente?</text>
+
+  <rect x="217" y="448" width="166" height="40" rx="8" fill="#A3C4E0" stroke="#82A8C6" stroke-width="1"/>
+  <text x="300" y="465" text-anchor="middle" fill="#1A1A1A" font-size="11" font-weight="700">Quote Retrieval</text>
+  <text x="300" y="479" text-anchor="middle" fill="#4A4A4A" font-size="9">preventivo storico per analogia</text>
+
+  <rect x="390" y="448" width="166" height="40" rx="8" fill="#A3C4E0" stroke="#82A8C6" stroke-width="1"/>
+  <text x="473" y="465" text-anchor="middle" fill="#1A1A1A" font-size="11" font-weight="700">Commercial Export</text>
+  <text x="473" y="479" text-anchor="middle" fill="#4A4A4A" font-size="9">accesso autonomo Commerciale</text>
+
+  <!-- Connector down -->
+  <line x1="300" y1="494" x2="300" y2="512" stroke="#D0D0D0" stroke-width="1" stroke-dasharray="4,3"/>
+
+  <!-- ==================== AI FINE-TUNING TRACK ==================== -->
+  <rect x="30" y="514" width="540" height="74" rx="10" fill="#FFF8E0" stroke="#B8922E" stroke-width="1.4" stroke-dasharray="6,3"/>
+  <text x="300" y="534" text-anchor="middle" fill="#1A1A1A" font-size="11" font-weight="700">AI Fine-Tuning Track</text>
+  <text x="300" y="552" text-anchor="middle" fill="#4A4A4A" font-size="9.5">Dataset 27K+ storici  →  (disegno + BOM) → (materie prime, tempi, prezzo, margine)</text>
+  <text x="300" y="568" text-anchor="middle" fill="#876A1A" font-size="9.5" font-weight="600">Modello AI servito come assistente di preventivazione automatica</text>
+  <rect x="250" y="574" width="100" height="12" rx="6" fill="none" stroke="#B8922E" stroke-width="0.8"/>
+  <text x="300" y="583" text-anchor="middle" fill="#876A1A" font-size="7" font-weight="600">MEDIO TERMINE</text>
+
+  <!-- Connector down -->
+  <line x1="300" y1="588" x2="300" y2="606" stroke="#D0D0D0" stroke-width="1" stroke-dasharray="4,3"/>
+
+  <!-- ==================== EXTERNAL SYSTEMS (DATA LAYER) ==================== -->
+  <rect x="30" y="608" width="540" height="168" rx="10" fill="#F7F7F7" stroke="#D5D5D5" stroke-width="1"/>
+  <text x="300" y="630" text-anchor="middle" fill="#1A1A1A" font-size="10.5" font-weight="600" letter-spacing="0.8">EXTERNAL SYSTEMS</text>
+
+  <!-- Sage X3 (read-only, yellow) -->
+  <rect x="50" y="648" width="210" height="56" rx="10" fill="#F7D96E" stroke="#DEC25A" stroke-width="1"/>
+  <ellipse cx="84" cy="672" rx="12" ry="7" fill="none" stroke="#B8922E" stroke-width="1.2"/>
+  <path d="M72,672 L72,684 Q84,691 96,684 L96,672" fill="none" stroke="#B8922E" stroke-width="1.2"/>
+  <text x="162" y="672" text-anchor="middle" fill="#1A1A1A" font-size="12" font-weight="700">Sage X3</text>
+  <text x="162" y="688" text-anchor="middle" fill="#666" font-size="9.5">SQL Server · Read-Only</text>
+
+  <!-- KB il cliente (blue) -->
+  <rect x="340" y="648" width="210" height="56" rx="10" fill="#A3C4E0" stroke="#82A8C6" stroke-width="1"/>
+  <ellipse cx="374" cy="672" rx="12" ry="7" fill="none" stroke="#5585A8" stroke-width="1.2"/>
+  <path d="M362,672 L362,684 Q374,691 386,684 L386,672" fill="none" stroke="#5585A8" stroke-width="1.2"/>
+  <text x="452" y="672" text-anchor="middle" fill="#1A1A1A" font-size="12" font-weight="700">KB il cliente</text>
+  <text x="452" y="688" text-anchor="middle" fill="#666" font-size="9.5">Postgres + pgvector + Blob</text>
+
+  <!-- ETL Sync arrows -->
+  <line x1="266" y1="668" x2="334" y2="668" stroke="#999" stroke-width="1.5" marker-end="url(#arrowRight)"/>
+  <line x1="334" y1="684" x2="266" y2="684" stroke="#999" stroke-width="1.5" marker-end="url(#arrowLeft)"/>
+  <text x="300" y="660" text-anchor="middle" fill="#888" font-size="8.5" font-weight="600">ETL Sync</text>
+
+  <!-- Legend -->
+  <g transform="translate(50, 730)">
+    <rect x="0" y="0" width="12" height="12" rx="3" fill="#F7D96E" stroke="#DEC25A" stroke-width="0.8"/>
+    <text x="18" y="10" fill="#666" font-size="9">Read-Only (Sage X3 / Sources)</text>
+    <rect x="200" y="0" width="12" height="12" rx="3" fill="#A3C4E0" stroke="#82A8C6" stroke-width="0.8"/>
+    <text x="218" y="10" fill="#666" font-size="9">Read-Write (KB il cliente)</text>
+    <rect x="380" y="0" width="12" height="12" rx="3" fill="#FFF8E0" stroke="#B8922E" stroke-width="0.8" stroke-dasharray="2,1"/>
+    <text x="398" y="10" fill="#666" font-size="9">Fine-Tuning Track</text>
+  </g>
+
+  <text x="300" y="760" text-anchor="middle" fill="#888" font-size="9">Ingestion automatica: Email (IMAP) · CAD 3D per macchine (export) · sistema di gestione job (export) — zero impatto su produzione</text>
+
+  <!-- Footer -->
+  <text x="300" y="828" text-anchor="middle" fill="#AAAAAA" font-size="8.5">© 2026 Perspective AI — Drawings &amp; Quotes Knowledge Base, il cliente</text>
+</svg>

@@ -1,0 +1,210 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" width="600" height="800" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+
+  <!-- Background -->
+  <rect width="600" height="800" fill="#FFFFFF"/>
+
+  <!-- ==================== TITLE ==================== -->
+  <text x="300" y="28" text-anchor="middle" fill="#1A1A1A" font-size="16" font-weight="700">Esempio Output — il cliente AI Assistant</text>
+  <text x="300" y="44" text-anchor="middle" fill="#888888" font-size="10">Piattaforma Modulare AI/BI</text>
+  <line x1="60" y1="54" x2="540" y2="54" stroke="#E0E0E0" stroke-width="1"/>
+
+  <!-- ==================== USER INPUT ==================== -->
+  <!-- Blue input bubble -->
+  <rect x="30" y="62" width="540" height="68" rx="10" fill="#3A5BA0"/>
+  <text fill="#FFFFFF" font-size="9">
+    <tspan x="44" y="78">"Buongiorno, devo preparare un'offerta per Ferrotubi SpA, mi hanno chiesto 150 barre tonde in</tspan>
+    <tspan x="44" dy="14">acciaio inox AISI 304, Ø40mm, lunghezza 6 metri. Controllami la disponibilità a magazzino,</tspan>
+    <tspan x="44" dy="14">fammi un'analisi sull'affidabilità di pagamento di questo cliente, e dammi il fatturato degli</tspan>
+    <tspan x="44" dy="14">ultimi 12 mesi con loro."</tspan>
+  </text>
+
+  <!-- Connector -->
+  <line x1="300" y1="132" x2="300" y2="148" stroke="#D0D0D0" stroke-width="1" stroke-dasharray="3,2"/>
+
+  <!-- ==================== CARD 1: MATERIAL OPTIMIZATION ==================== -->
+  <rect x="30" y="162" width="540" height="154" rx="9" fill="#1C1C1E" stroke="#333333" stroke-width="0.8"/>
+  <rect x="31" y="163" width="538" height="3" fill="#F7D96E"/>
+
+  <!-- Header -->
+  <circle cx="47" cy="180" r="9" fill="#F7D96E"/>
+  <text x="47" y="183.5" text-anchor="middle" fill="#1A1A1A" font-size="9" font-weight="700">1</text>
+  <text x="62" y="184" fill="#E8E8E8" font-size="11.5" font-weight="700">Material Optimization</text>
+
+  <!-- Summary -->
+  <text x="47" y="198" fill="#999999" font-size="8" font-style="italic">Verifica disponibilità e calcolo fabbisogno per 150 barre AISI 304 Ø40mm × 6m</text>
+
+  <!-- Table header -->
+  <rect x="40" y="205" width="520" height="15" rx="3" fill="#2A2A2E"/>
+  <text x="47" y="216" fill="#777777" font-size="6.5" font-weight="600" letter-spacing="0.8">PARAMETRO</text>
+  <text x="200" y="216" fill="#777777" font-size="6.5" font-weight="600" letter-spacing="0.8">VALORE</text>
+  <text x="395" y="216" fill="#777777" font-size="6.5" font-weight="600" letter-spacing="0.8">NOTE</text>
+
+  <!-- Row 1 -->
+  <rect x="40" y="220" width="520" height="16" fill="#1E1E22"/>
+  <text x="47" y="232" fill="#CCCCCC" font-size="8.5">Articolo</text>
+  <text x="200" y="232" fill="#F7D96E" font-size="8.5">Barra tonda AISI 304 Ø40mm</text>
+  <text x="395" y="232" fill="#999999" font-size="8.5">Cod. ART-304-T40</text>
+
+  <!-- Row 2 -->
+  <rect x="40" y="236" width="520" height="16" fill="#232328"/>
+  <text x="47" y="248" fill="#CCCCCC" font-size="8.5">Quantità richiesta</text>
+  <text x="200" y="248" fill="#F7D96E" font-size="8.5">150 barre × 6m = 900 m</text>
+  <text x="395" y="248" fill="#999999" font-size="8.5">≈ 2.960 kg</text>
+
+  <!-- Row 3 -->
+  <rect x="40" y="252" width="520" height="16" fill="#1E1E22"/>
+  <text x="47" y="264" fill="#CCCCCC" font-size="8.5">Giacenza attuale</text>
+  <text x="200" y="264" fill="#E8E8E8" font-size="8.5">47 barre (282 m)</text>
+  <text x="395" y="264" fill="#999999" font-size="8.5">Lotto L2026-0142</text>
+
+  <!-- Row 4 -->
+  <rect x="40" y="268" width="520" height="16" fill="#232328"/>
+  <text x="47" y="280" fill="#CCCCCC" font-size="8.5">Fabbisogno residuo</text>
+  <text x="200" y="280" fill="#E8A838" font-size="8.5" font-weight="600">103 barre (618 m)</text>
+  <text x="395" y="280" fill="#E8A838" font-size="8.5">Da ordinare</text>
+
+  <!-- Row 5 -->
+  <rect x="40" y="284" width="520" height="16" fill="#1E1E22"/>
+  <text x="47" y="296" fill="#CCCCCC" font-size="8.5">Lead time stimato</text>
+  <text x="200" y="296" fill="#E8E8E8" font-size="8.5">8–12 gg lavorativi</text>
+  <text x="395" y="296" fill="#999999" font-size="8.5">Fornitore abituale</text>
+
+  <!-- Row 6 -->
+  <rect x="40" y="300" width="520" height="16" fill="#232328"/>
+  <text x="47" y="312" fill="#CCCCCC" font-size="8.5">Sfrido stimato</text>
+  <text x="200" y="312" fill="#E8E8E8" font-size="8.5">2,4%</text>
+  <text x="395" y="312" fill="#999999" font-size="8.5">Storico profilo simile</text>
+
+  <!-- ==================== CARD 2: FINANCIAL INTELLIGENCE ==================== -->
+  <rect x="30" y="334" width="540" height="154" rx="9" fill="#1C1C1E" stroke="#333333" stroke-width="0.8"/>
+  <rect x="31" y="335" width="538" height="3" fill="#A3C4E0"/>
+
+  <!-- Header -->
+  <circle cx="47" cy="352" r="9" fill="#A3C4E0"/>
+  <text x="47" y="355.5" text-anchor="middle" fill="#1A1A1A" font-size="9" font-weight="700">2</text>
+  <text x="62" y="356" fill="#E8E8E8" font-size="11.5" font-weight="700">Financial Intelligence</text>
+
+  <!-- Summary -->
+  <text x="47" y="370" fill="#999999" font-size="8" font-style="italic">Analisi esposizione creditizia e affidabilità pagamenti Ferrotubi SpA</text>
+
+  <!-- Table header -->
+  <rect x="40" y="377" width="520" height="15" rx="3" fill="#2A2A2E"/>
+  <text x="47" y="388" fill="#777777" font-size="6.5" font-weight="600" letter-spacing="0.8">PARAMETRO</text>
+  <text x="200" y="388" fill="#777777" font-size="6.5" font-weight="600" letter-spacing="0.8">VALORE</text>
+  <text x="395" y="388" fill="#777777" font-size="6.5" font-weight="600" letter-spacing="0.8">NOTE</text>
+
+  <!-- Row 1 -->
+  <rect x="40" y="392" width="520" height="16" fill="#1E1E22"/>
+  <text x="47" y="404" fill="#CCCCCC" font-size="8.5">Esposizione totale</text>
+  <text x="200" y="404" fill="#E8E8E8" font-size="8.5" font-weight="600">€187.420</text>
+  <text x="395" y="404" fill="#999999" font-size="8.5">Fatt. + RIBA + Ordini conf.</text>
+
+  <!-- Row 2 -->
+  <rect x="40" y="408" width="520" height="16" fill="#232328"/>
+  <text x="47" y="420" fill="#CCCCCC" font-size="8.5">Limite primario assicuratore crediti</text>
+  <text x="200" y="420" fill="#E8E8E8" font-size="8.5">€250.000</text>
+  <text x="395" y="420" fill="#E8A838" font-size="8.5">Utilizzo: 74,9%</text>
+
+  <!-- Row 3 -->
+  <rect x="40" y="424" width="520" height="16" fill="#1E1E22"/>
+  <text x="47" y="436" fill="#CCCCCC" font-size="8.5">DSO medio 12 mesi</text>
+  <text x="200" y="436" fill="#E8A838" font-size="8.5" font-weight="600">68 giorni (cond. 60 gg FM)</text>
+  <text x="395" y="436" fill="#E8A838" font-size="8.5">Trend in peggioramento</text>
+
+  <!-- Row 4 -->
+  <rect x="40" y="440" width="520" height="16" fill="#232328"/>
+  <text x="47" y="452" fill="#CCCCCC" font-size="8.5">Fatture scadute</text>
+  <text x="200" y="452" fill="#E85050" font-size="8.5" font-weight="600">3 per €38.200</text>
+  <text x="395" y="452" fill="#E85050" font-size="8.5">Ritardo medio: 22 gg</text>
+
+  <!-- Row 5 -->
+  <rect x="40" y="456" width="520" height="16" fill="#1E1E22"/>
+  <text x="47" y="468" fill="#CCCCCC" font-size="8.5">Ultimo pagamento</text>
+  <text x="200" y="468" fill="#E8E8E8" font-size="8.5">14/02/2026 — €18.400</text>
+  <text x="395" y="468" fill="#E8A838" font-size="8.5">Ritardo: 15 gg</text>
+
+  <!-- Row 6 -->
+  <rect x="40" y="472" width="520" height="16" fill="#232328"/>
+  <text x="47" y="484" fill="#CCCCCC" font-size="8.5">Rating interno</text>
+  <text x="200" y="484" fill="#E8A838" font-size="8.5" font-weight="600">B+ (era A− 6 mesi fa)</text>
+  <text x="395" y="484" fill="#E85050" font-size="8.5">Attenzione</text>
+
+  <!-- ==================== CARD 3: BUSINESS INTELLIGENCE ==================== -->
+  <rect x="30" y="506" width="540" height="154" rx="9" fill="#1C1C1E" stroke="#333333" stroke-width="0.8"/>
+  <rect x="31" y="507" width="538" height="3" fill="#F7D96E"/>
+
+  <!-- Header -->
+  <circle cx="47" cy="524" r="9" fill="#F7D96E"/>
+  <text x="47" y="527.5" text-anchor="middle" fill="#1A1A1A" font-size="9" font-weight="700">3</text>
+  <text x="62" y="528" fill="#E8E8E8" font-size="11.5" font-weight="700">Business Intelligence &amp; Analytics</text>
+
+  <!-- Summary -->
+  <text x="47" y="542" fill="#999999" font-size="8" font-style="italic">Analisi fatturato e trend commerciale Ferrotubi SpA — ultimi 12 mesi</text>
+
+  <!-- Table header -->
+  <rect x="40" y="549" width="520" height="15" rx="3" fill="#2A2A2E"/>
+  <text x="47" y="560" fill="#777777" font-size="6.5" font-weight="600" letter-spacing="0.8">PARAMETRO</text>
+  <text x="200" y="560" fill="#777777" font-size="6.5" font-weight="600" letter-spacing="0.8">VALORE</text>
+  <text x="395" y="560" fill="#777777" font-size="6.5" font-weight="600" letter-spacing="0.8">NOTE</text>
+
+  <!-- Row 1 -->
+  <rect x="40" y="564" width="520" height="16" fill="#1E1E22"/>
+  <text x="47" y="576" fill="#CCCCCC" font-size="8.5">Fatturato 12 mesi</text>
+  <text x="200" y="576" fill="#E8E8E8" font-size="8.5" font-weight="600">€423.850</text>
+  <text x="395" y="576" fill="#5CB85C" font-size="8.5">+12% vs anno precedente</text>
+
+  <!-- Row 2 -->
+  <rect x="40" y="580" width="520" height="16" fill="#232328"/>
+  <text x="47" y="592" fill="#CCCCCC" font-size="8.5">Ordini attivi</text>
+  <text x="200" y="592" fill="#E8E8E8" font-size="8.5">4 ordini per €67.200</text>
+  <text x="395" y="592" fill="#999999" font-size="8.5">—</text>
+
+  <!-- Row 3 -->
+  <rect x="40" y="596" width="520" height="16" fill="#1E1E22"/>
+  <text x="47" y="608" fill="#CCCCCC" font-size="8.5">Mix prodotto</text>
+  <text x="200" y="608" fill="#E8E8E8" font-size="8.5">72% tonde inox, 18% piatti</text>
+  <text x="395" y="608" fill="#999999" font-size="8.5">10% tubolari</text>
+
+  <!-- Row 4 -->
+  <rect x="40" y="612" width="520" height="16" fill="#232328"/>
+  <text x="47" y="624" fill="#CCCCCC" font-size="8.5">Margine medio</text>
+  <text x="200" y="624" fill="#E8E8E8" font-size="8.5">14,2%</text>
+  <text x="395" y="624" fill="#E8A838" font-size="8.5">Sotto media clienti (16,8%)</text>
+
+  <!-- Row 5 -->
+  <rect x="40" y="628" width="520" height="16" fill="#1E1E22"/>
+  <text x="47" y="640" fill="#CCCCCC" font-size="8.5">Frequenza ordini</text>
+  <text x="200" y="640" fill="#E8E8E8" font-size="8.5">~2,3 ordini/mese</text>
+  <text x="395" y="640" fill="#5CB85C" font-size="8.5">Cliente regolare</text>
+
+  <!-- Row 6 -->
+  <rect x="40" y="644" width="520" height="16" fill="#232328"/>
+  <text x="47" y="656" fill="#CCCCCC" font-size="8.5">Trend</text>
+  <text x="200" y="656" fill="#5CB85C" font-size="8.5">Volume in crescita</text>
+  <text x="395" y="656" fill="#E8A838" font-size="8.5">Marginalità in calo −2,1pp</text>
+
+  <!-- Connector -->
+  <line x1="300" y1="662" x2="300" y2="676" stroke="#D0D0D0" stroke-width="1" stroke-dasharray="3,2"/>
+
+  <!-- ==================== SYNTHESIS ==================== -->
+  <rect x="30" y="680" width="540" height="74" rx="9" fill="#FAF6EB" stroke="#DEC25A" stroke-width="0.8"/>
+  <rect x="34" y="685" width="3" height="64" rx="1.5" fill="#B8922E"/>
+
+  <!-- Title -->
+  <text x="47" y="698" fill="#B8922E" font-size="10" font-weight="700" letter-spacing="0.4">SINTESI AI ASSISTANT</text>
+  <text x="254" y="698" fill="#999999" font-size="8">Analisi cross-modulo</text>
+
+  <!-- Body -->
+  <text fill="#444444" font-size="8.5">
+    <tspan x="47" y="714">Il cliente Ferrotubi SpA è un partner rilevante (€424k/anno, +12%), ma con pagamenti in deterioramento</tspan>
+    <tspan x="47" dy="13">(DSO 68 gg, 3 fatture scadute). Procedere con l'offerta richiedendo anticipo 30% o garanzia bancaria.</tspan>
+    <tspan x="47" dy="13">Materiale: 47 barre disponibili a magazzino, le restanti 103 da ordinare (lead time 8–12 gg).</tspan>
+  </text>
+
+  <!-- Timestamp -->
+  <text x="556" y="750" text-anchor="end" fill="#CCCCCC" font-size="6.5">Generato dal cliente AI Assistant — 21/03/2026 09:14:28</text>
+
+  <!-- ==================== FOOTER ==================== -->
+  <text x="300" y="786" text-anchor="middle" fill="#AAAAAA" font-size="8">© 2026 Perspective AI — Piattaforma AI/BI il cliente</text>
+
+</svg>
