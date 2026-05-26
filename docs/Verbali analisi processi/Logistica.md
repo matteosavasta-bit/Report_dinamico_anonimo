@@ -1,4 +1,4 @@
-# Primario Player Siderurgico – Logistica
+# Analisi strategica e piano introduzione AI – Logistica
 *Note del 3 febbraio 2026*
 
 ---

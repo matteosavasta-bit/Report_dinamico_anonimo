@@ -13,6 +13,7 @@ import { SalesModularPlatformView } from './views/SalesModularPlatformView';
 import { DataSourceView } from './views/DataSourceView';
 import { DevelopmentView } from './views/DevelopmentView';
 import { Menu } from 'lucide-react';
+import { BRAND_MARK_SRC, REPORT_TITLE } from './brand';
 
 export default function App() {
   const [activeSection, setActiveSection] = useState('landing');
@@ -74,8 +75,8 @@ export default function App() {
                   <Menu className="w-6 h-6" />
                 </button>
                 <div className="ml-4 flex items-center gap-3 min-w-0">
-                  <img src="/logo-mark.svg" alt="" className="h-6 w-6 object-contain shrink-0" />
-                  <span className="font-bold text-base text-white truncate">Primario Player</span>
+                  <img src={BRAND_MARK_SRC} alt="" className="h-6 w-6 object-contain shrink-0" />
+                  <span className="font-semibold text-sm leading-tight text-white whitespace-normal">{REPORT_TITLE}</span>
                 </div>
               </div>
 

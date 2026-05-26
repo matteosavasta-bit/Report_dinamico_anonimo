@@ -137,8 +137,8 @@ export function ProcessFlowView() {
       className="space-y-8"
     >
       <header>
-        <h1 className="text-3xl font-bold text-white mb-4 uppercase tracking-tight">
-          Il ciclo end-to-end di Primario Player Siderurgico
+        <h1 className="text-3xl font-bold text-white mb-4 uppercase tracking-normal">
+          Il ciclo end-to-end di Analisi strategica e piano introduzione AI
         </h1>
         <p className="text-gray-400 leading-relaxed max-w-4xl">
           Dall\'arrivo della richiesta cliente alla fatturazione: otto fasi operative che attraversano area commerciale, ufficio tecnico, magazzino e amministrazione. La mappa è il risultato dell\'audit processi condotto a febbraio 2026 sui quattro reparti (Commerciale, Logistica, Magazzino/Fiscale, Ufficio Tecnico) e identifica dove l\'attuale perimetro Sage X3 + strumenti esterni genera attrito. I pain point associati ad ogni fase sono i 18 rilevati nei verbali.

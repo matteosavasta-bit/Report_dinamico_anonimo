@@ -6,6 +6,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { ChevronDown } from 'lucide-react';
+import { BRAND_LOGO_SRC, BRAND_MARK_SRC, POWERED_BY_NAME, REPORT_TITLE } from '../brand';
 
 export function LandingView({ onContinue }: { onContinue: () => void } & any) {
   const handleKeyDown = (event: any) => {
@@ -25,11 +26,11 @@ export function LandingView({ onContinue }: { onContinue: () => void } & any) {
       exit={{ opacity: 0, scale: 0.98 }}
       transition={{ duration: 0.6 }}
       className="relative min-h-screen w-full flex items-center justify-center bg-[var(--color-dark-bg)] text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-accent)] cursor-pointer overflow-hidden"
-      aria-label="Inizia il report dinamico Primario Player"
+      aria-label={`Inizia il report dinamico ${REPORT_TITLE}`}
     >
       <div className="flex flex-col items-center text-center px-6 space-y-8 md:space-y-10">
         <motion.img
-          src="/logo-mark.svg"
+          src={BRAND_MARK_SRC}
           alt=""
           aria-hidden="true"
           className="h-10 w-10 object-contain"
@@ -40,12 +41,12 @@ export function LandingView({ onContinue }: { onContinue: () => void } & any) {
 
         <div className="flex flex-col items-center space-y-5">
           <motion.h1
-            className="text-5xl sm:text-6xl md:text-7xl font-bold text-white tracking-tight"
+            className="max-w-5xl text-4xl sm:text-5xl md:text-6xl font-bold leading-tight text-white tracking-normal"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.25, duration: 0.6 }}
           >
-            Primario Player
+            {REPORT_TITLE}
           </motion.h1>
 
           <motion.div
@@ -83,7 +84,7 @@ export function LandingView({ onContinue }: { onContinue: () => void } & any) {
       >
         <div className="flex items-center gap-3 text-xs text-gray-500">
           <span className="uppercase tracking-wider">Powered by</span>
-          <img src="/logo-pai.svg" alt="Perspective AI" className="h-6 object-contain" />
+          <img src={BRAND_LOGO_SRC} alt={POWERED_BY_NAME} className="h-8 object-contain" />
         </div>
 
         <div className="flex flex-col items-center gap-2 text-gray-500">

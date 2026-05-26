@@ -176,10 +176,10 @@ export function Solution4Demo() {
                       Qualità: S235JR<br />
                       Lunghezza barre: 6000 mm<br />
                       Quantità totale: 240 m (~3,34 t)<br />
-                      Consegna: entro 15 giorni a Primario Player Siderurgico — [città cliente]
+                      Consegna: entro 15 giorni al cliente — [città cliente]
                     </div>
                     <p>Vi chiediamo di indicare: prezzo €/m, disponibilità (D/d), tempi di consegna.</p>
-                    <p>Cordiali saluti,<br />Ufficio Acquisti Primario Player Siderurgico</p>
+                    <p>Cordiali saluti,<br />Ufficio Acquisti</p>
                   </div>
                 </div>
                 <div className="px-5 py-3 bg-[var(--color-dark-bg)] border-t border-[var(--color-dark-border)] flex items-center justify-between">

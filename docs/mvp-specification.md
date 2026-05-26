@@ -1,8 +1,8 @@
-# MVP Primario Player — Specification & Development Roadmap
+# MVP Analisi strategica e piano introduzione AI — Specification & Development Roadmap
 
 **Versione**: 1.0
 **Data**: 2026-04-11
-**Owner**: Perspective AI
+**Owner**: AI Squared
 **Target audience**: DevOps, Full-Stack Engineers, AI Engineers
 **Stato**: Baseline per lo sviluppo
 
@@ -25,9 +25,9 @@ Se un requisito è ambiguo, **fermati e chiedi**. Non inventare dati, non fakear
 
 ### 1.1 Perché questo MVP esiste
 
-il primario player siderurgico è un'azienda di distribuzione e lavorazione acciaio. Abbiamo consegnato una proposta per una **piattaforma modulare a 6 moduli** (BUSSOLA, CASSA FORTE, FORGIA, SENTINELLA, BANCO, MAESTRO) costruita sopra il loro ERP Sage X3. L'audit di fattibilità (`docs/feasibility-audit.md`) ha identificato BUSSOLA e BANCO come i moduli a **massima fattibilità read-only** e MAESTRO come il migliore candidato per dimostrare l'angolo AI.
+il cliente siderurgico è un'azienda di distribuzione e lavorazione acciaio. Abbiamo consegnato una proposta per una **piattaforma modulare a 6 moduli** (BUSSOLA, CASSA FORTE, FORGIA, SENTINELLA, BANCO, MAESTRO) costruita sopra il loro ERP Sage X3. L'audit di fattibilità (`docs/feasibility-audit.md`) ha identificato BUSSOLA e BANCO come i moduli a **massima fattibilità read-only** e MAESTRO come il migliore candidato per dimostrare l'angolo AI.
 
-L'MVP **non è un prototipo del prodotto finale**. È una **demo di convincimento**: deve dimostrare, in 15 minuti di presentazione, che PAI può consegnare valore reale sui loro dati reali, veloce. L'obiettivo è ottenere il go-ahead per il progetto completo.
+L'MVP **non è un prototipo del prodotto finale**. È una **demo di convincimento**: deve dimostrare, in 15 minuti di presentazione, che AI Squared può consegnare valore reale sui loro dati reali, veloce. L'obiettivo è ottenere il go-ahead per il progetto completo.
 
 ### 1.2 Obiettivi di business dell'MVP
 
@@ -814,7 +814,7 @@ La sessione dura **24h** (configurabile in Supabase Auth settings). Il pulsante 
 Il **public signup è disabilitato** in Supabase Auth (Project Settings → Authentication → User signups → off). Solo gli utenti pre-invitati possono autenticarsi. L'invito avviene in due modi:
 
 1. **Manuale** (MVP): il DevOps crea gli utenti dalla dashboard Supabase (Auth → Users → Invite user) prima della demo. Lista target:
-   - Team PAI (3 account)
+   - Team AI Squared (3 account)
    - Stakeholder il cliente (3-5 account da concordare prima della demo — vedi §15 rischi)
 2. **Via tabella `allowed_email`** (opzionale, più robusto): un hook Supabase Auth (`before-signin`) controlla che l'email sia nella whitelist prima di emettere il link.
 
@@ -869,7 +869,7 @@ In **Project Settings → Authentication**:
 - Allow manual linking: ❌
 - Site URL: URL Vercel di produzione demo (es. `https://platform-demo.vercel.app`)
 - Redirect URLs (allow list): aggiungi sia il dominio production che il pattern preview di Vercel (`https://platform-demo-*.vercel.app/**`) + `http://localhost:5173/**` per sviluppo
-- Email template "Magic Link": personalizzato in italiano con mittente "Perspective AI — Piattaformal cliente"
+- Email template "Magic Link": personalizzato in italiano con mittente "AI Squared — Piattaformal cliente"
 - JWT expiry: `86400` (24h)
 - Refresh token rotation: ✅
 
@@ -882,7 +882,7 @@ In **Project Settings → Authentication**:
 - [ ] Il pulsante "Esci" distrugge la sessione e redirige a `/login`
 - [ ] Con public signup disabilitato, un'email **non in whitelist** non riceve il magic link (o lo riceve ma il sign-in fallisce con messaggio chiaro)
 - [ ] Le query Supabase dal client senza sessione ritornano **zero righe** (grazie a RLS), non errori
-- [ ] Tutti gli account demo (team PAI + stakeholder il cliente concordati) sono creati in Supabase Auth prima della demo
+- [ ] Tutti gli account demo (team AI Squared + stakeholder il cliente concordati) sono creati in Supabase Auth prima della demo
 
 ### 8.4 Design system
 
@@ -958,7 +958,7 @@ Il client React allega automaticamente il JWT quando usa `supabase.functions.inv
 - [ ] Ruolo `maestro_ro` verificato con query di test (SELECT ok, INSERT rigettato, query > 5s killata)
 - [ ] Browser DevTools non mostra Gemini API key, service_role key né `maestro_ro` connection string
 - [ ] Signup pubblico disabilitato in Supabase Auth
-- [ ] Whitelist utenti creata (team PAI + stakeholder il cliente)
+- [ ] Whitelist utenti creata (team AI Squared + stakeholder il cliente)
 - [ ] Magic link email template testato su Gmail, Outlook, Apple Mail (no spam folder)
 - [ ] Edge Functions rispondono 401 a richieste senza JWT valido
 
@@ -1022,7 +1022,7 @@ Gestione via `vercel env` CLI per frontend. Mai committare `.env`.
 | Ambiente | Branch | URL Vercel | Supabase project |
 |----------|--------|-----------|------------------|
 | `dev` | feature branches | `*-platform-demo.vercel.app` | shared dev project |
-| `demo` | `main` | `platform-demo.pai` (custom domain facoltativo) | dedicated demo project |
+| `demo` | `main` | `platform-demo.example.com` (custom domain facoltativo) | dedicated demo project |
 
 Non creiamo un ambiente `staging`: l'MVP dura pochi giorni.
 
@@ -1038,7 +1038,7 @@ Non creiamo un ambiente `staging`: l'MVP dura pochi giorni.
 | Creare Supabase project `platform-demo` | DevOps | URL + keys in 1Password |
 | Creare Vercel project + collegamento GitHub | DevOps | primo preview deploy di Vite hello world |
 | Configurare Supabase Auth (magic link, signup off, site URL, redirect URLs) | DevOps | email di test ricevuta con link valido |
-| Creare whitelist utenti iniziale (team PAI) | DevOps | 3 account invitati in Supabase Auth |
+| Creare whitelist utenti iniziale (team AI Squared) | DevOps | 3 account invitati in Supabase Auth |
 | Provisioning Google AI Studio API key | AI Eng | key in Supabase Function secrets |
 | Validare VPN gruppo industriale del cliente + query test su Sage | Full-stack | screenshot di `select top 10 * from SINVOICED` |
 
@@ -1165,7 +1165,7 @@ Se (1) fallisce è un bug da risolvere. Se (2) fallisce, abbiamo costruito la co
 | Cliente riconosce sé stesso negli alias | Bassa | Alto | Alias ordinati per hash, non per volume; nessun "Cliente 1 = il più grande" |
 | Deploy Vercel fallisce 5 min prima della demo | Bassa | Catastrofico | Pin di una deployment production stabile + fallback `vercel rollback` |
 | Magic link finisce in spam sui domini del cliente | Media | Alto | Test con Gmail/Outlook/Apple Mail in Day 4; template email in italiano; mittente verificato; in ultima istanza creare l'account presentatore su un dominio controllato |
-| Whitelist email il cliente non concordata in tempo | Media | Medio | Entro Day 3: email a il referente IT del cliente (IT il cliente) con richiesta lista; fallback: usare email PAI per tutti i partecipanti durante la demo live |
+| Whitelist email il cliente non concordata in tempo | Media | Medio | Entro Day 3: email a il referente IT del cliente (IT il cliente) con richiesta lista; fallback: usare email AI Squared per tutti i partecipanti durante la demo live |
 | Sessione scade a metà demo | Bassa | Medio | JWT a 24h, rehearsal completo il mattino della demo per refreshare i token |
 
 ---
@@ -1193,4 +1193,4 @@ Elementi da portare al cliente come "ecco cosa arriva dopo":
 
 ---
 
-*Documento baseline MVP — v1.0 — Perspective AI*
+*Documento baseline MVP — v1.0 — AI Squared*

@@ -1,6 +1,6 @@
 # Report Dinamico — Esempio Deliverable (versione anonimizzata)
 
-Dashboard interattivo che presenta una proposta tecnico-commerciale e l'analisi processi consegnata a un **primario player siderurgico** italiano. Questo è un **esempio di deliverable Perspective AI**, sanitizzato per essere condiviso esternamente: nomi, codici cliente, fornitori, partner tecnologici e numeri-impronta sono stati sostituiti con placeholder.
+Dashboard interattivo che presenta una proposta tecnico-commerciale e l'analisi processi consegnata a un **cliente siderurgico** italiano. Questo è un **esempio di deliverable AI Squared**, sanitizzato per essere condiviso esternamente: nomi, codici cliente, fornitori, partner tecnologici e numeri-impronta sono stati sostituiti con placeholder.
 
 ## Contenuto
 

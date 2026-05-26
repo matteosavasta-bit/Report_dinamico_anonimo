@@ -1,9 +1,9 @@
-# Proposta: Piattaforma Modulare AI/BI per Primario Player Siderurgico
+# Proposta: Piattaforma Modulare AI/BI per Analisi strategica e piano introduzione AI
 
 **Documento**: Proposta tecnico-commerciale
 **Versione**: 1.0 — Marzo 2026
-**Preparato da**: Perspective AI
-**Per**: Primario Player Siderurgico
+**Preparato da**: AI Squared
+**Per**: Analisi strategica e piano introduzione AI
 **Stato**: Draft per discussione interna
 
 ---
@@ -782,4 +782,4 @@ La tabella seguente mostra il costo mensile di esercizio **cumulativo** dopo il 
 
 ---
 
-*Documento preparato da Perspective AI per Primario Player Siderurgico — Marzo 2026*
+*Documento preparato da AI Squared per Analisi strategica e piano introduzione AI — Marzo 2026*

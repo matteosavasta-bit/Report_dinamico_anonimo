@@ -1,4 +1,4 @@
-# Primario Player Siderurgico – Incontro Area Commerciale
+# Analisi strategica e piano introduzione AI – Incontro Area Commerciale
 **Data:** 03/02/2026
 
 > **To-do:** chiedere excel conversione, esempi quantità, excel per scambio feedback, mail cliente con allegati, disegni lavorazioni.

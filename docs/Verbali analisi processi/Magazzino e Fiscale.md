@@ -1,4 +1,4 @@
-# Primario Player Siderurgico – Amministrazione
+# Analisi strategica e piano introduzione AI – Amministrazione
 **Incontro con il team Amministrazione – 3 febbraio 2026**
 
 ---
@@ -25,7 +25,7 @@
 - File Excel per controllo scadenze acquisti e DDT da ricevere (non è possibile fare interrogazioni sull'ERP per fatture da ricevere).
 - Scadenziario pagamenti gestito su Excel.
 - Controllo incrociato tra DDT caricato e fattura effettiva.
-- **Voci doganali**: l'anagrafica articolo ha il campo voce doganale, ma non viene compilato dai colleghi commerciali — l'amministrazione deve prendere la lista, collegare le voci e inserirle in fattura. Primario Player Siderurgico usa codici dal `73..`; la voce doganale può differire tra acquisto estero e vendita.
+- **Voci doganali**: l'anagrafica articolo ha il campo voce doganale, ma non viene compilato dai colleghi commerciali — l'amministrazione deve prendere la lista, collegare le voci e inserirle in fattura. Il cliente usa codici dal `73..`; la voce doganale può differire tra acquisto estero e vendita.
 - **Fatture di acquisto**: si parte da XML scaricati automaticamente dal cassetto fiscale, importati in Sage tramite 2–3 passaggi manuali per spostare i dati nelle schermate corrette e compilare codice IVA, conto, ecc. La visualizzazione è molto più complessa rispetto al sistema precedente.
 - I mastri mostrano solo numeri, senza descrizione.
 - Nell'importazione XML il PDF allegato alla fattura si separa e deve essere ricollegato manualmente.

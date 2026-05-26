@@ -10,6 +10,7 @@ import {
   ChevronDown
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
+import { BRAND_LOGO_SRC, BRAND_MARK_SRC, POWERED_BY_NAME, REPORT_TITLE } from '../brand';
 
 interface SidebarProps {
   activeSection: string;
@@ -89,8 +90,8 @@ export function Sidebar({ activeSection, setActiveSection, isOpen, setIsOpen }: 
               animate={{ opacity: 1 }}
               className="flex items-center gap-3 min-w-0"
             >
-              <img src="/logo-mark.svg" alt="" className="h-7 w-7 object-contain shrink-0" />
-              <span className="text-base font-bold text-white leading-tight truncate">Primario Player</span>
+              <img src={BRAND_MARK_SRC} alt="" className="h-7 w-7 object-contain shrink-0" />
+              <span className="text-sm font-semibold text-white leading-tight whitespace-normal">{REPORT_TITLE}</span>
             </motion.div>
           )}
           <button
@@ -159,7 +160,7 @@ export function Sidebar({ activeSection, setActiveSection, isOpen, setIsOpen }: 
           <div className="px-4 py-4 border-t border-[var(--color-dark-border)]">
             <div className="flex items-center gap-2 text-xs text-gray-500">
               <span className="uppercase tracking-wider">Powered by</span>
-              <img src="/logo-pai.svg" alt="Perspective AI" className="h-4 object-contain" />
+              <img src={BRAND_LOGO_SRC} alt={POWERED_BY_NAME} className="h-5 object-contain" />
             </div>
           </div>
         )}
